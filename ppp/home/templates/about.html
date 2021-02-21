@@ -1,0 +1,77 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+  <link rel="stylesheet" href="{% static 'css/about.css' %}">
+
+  <link href="https://fonts.googleapis.com/css?family=Raleway:200,100,400" rel="stylesheet" type="text/css" />
+
+  <title>ABOUT | SREE NITHISH B</title>
+
+</head>
+<body>
+  <a href="/" id="text" class="flicker-div">
+    <p class="flicker-style">@sr<span id="offset">e</span>e_nithish_b</p>
+  </a>
+
+  <div style="margin: 0 0 50px 0;"></div>
+
+<!-- partial:index.partial.html -->
+
+<div class="container">
+  <h1>I'm a
+    <span
+       class="txt-rotate"
+       data-period="2000"
+       data-rotate='[ "Programmer.", "Game Developer.", "AI/ML Enthusiast.", "UI/UX Designer." ]'></span>
+  </h1>
+</div>
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-8">
+      <p id="type-text"></p>
+    </div>
+    <div class="col-sm-4 image-div">
+      <img class="img-fluid rounded-circle" src="{% static 'images/profile-pic.jpeg' %}" alt="" width="250px" height="250px">
+    </div>
+  </div>
+</div>
+
+
+<!-- partial -->
+  <script  src="{% static 'js/about.js' %}"></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+
+  <script type="text/javascript">
+  // Text Typewriter
+  var content = "I’m a super curious guy. I spend a lot of time building games, coding and developing AI and Automation software, but there’s also a lot more to it. I desire to become an Entrepreneur with my hard work and skills in coding and business.";
+
+  var ele = '<span>' + content.split('').join('</span><span>') + '</span>';
+
+
+  $(ele).hide().appendTo('#type-text').each(function (i) {
+      $(this).delay(50 * i).css({
+          display: 'inline',
+          opacity: 0
+      }).animate({
+          opacity: 1
+      }, 100);
+  });
+  </script>
+
+
+  <!-- Bootstrap js-->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+
+</body>
+</html>
