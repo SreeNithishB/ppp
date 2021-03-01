@@ -1,4 +1,19 @@
 @import url("https://fonts.googleapis.com/css?family=Cardo:400i|Rubik:400,700&display=swap");
+::-moz-selection {
+  color: black;
+  background: white;
+}
+
+::selection {
+  color: black;
+  background: white;
+}
+
+::-webkit-selection {
+  color: black;
+  background: white;
+}
+
 :root {
   --d: 700ms;
   --e: cubic-bezier(0.19, 1, 0.22, 1);
@@ -298,5 +313,12 @@ a,h1 {
   87% {
     opacity:1;
     text-shadow: 0px 0px 29px rgba(255, 255, 255, 1);
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  a,h1 {
+    font-size: 20px;
+    letter-spacing:5px;
   }
 }
