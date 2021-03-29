@@ -1,1 +1,31 @@
-The sentiment of the review is analyzed to be {{ review }}
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Sentiment Analysis with Logistic Regression</title>
+  <link rel="stylesheet" href="{% static 'restaurant_reviews_logistic/css/style.css' %}">
+
+</head>
+<body>
+
+  <form autocomplete="off" id="predict_form" class="form__group field" action="" method="post">
+    {% csrf_token %}
+
+    <input type="input" class="form__field" placeholder="write a review..." name="review" id='review' required />
+    <label for="review" class="form__label">write a review</label>
+
+    <a onclick="document.getElementById('predict_form').submit();" style="text-decoration: none !important;" class="glow-button">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      predict
+    </a>
+  </form>
+
+  <h3 style="display: {{ display }}">The sentiment of the review is analyzed to be <span style="color: {{ color }};">{{ review }}</span></h3>
+
+</body>
+</html>
