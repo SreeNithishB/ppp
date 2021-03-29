@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Cardo:400i|Rubik:400,700&display=swap");
 html,body {
   font-family: 'Raleway', sans-serif;
   padding: 3em 2em;
@@ -44,6 +45,7 @@ h2 {
 .flicker-div {
   text-align:center;
   position:absolute;
+  font-family: "Cardo", serif !important;
 
   margin-top: 20px;
   margin-left: 20px;

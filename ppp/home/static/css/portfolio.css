@@ -196,6 +196,7 @@ body {
 }
 
 a,h1 {
+  font-family: "Cardo", serif;
   color:whitesmoke;
   font-size: 40px;
   position: absolute;
@@ -316,9 +317,12 @@ a,h1 {
   }
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 500px) {
   a,h1 {
     font-size: 20px;
     letter-spacing:5px;
+  }
+  .hr-div {
+    margin-top: 100px !important;
   }
 }
