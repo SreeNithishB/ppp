@@ -50,7 +50,7 @@ body {
 }
 @media (min-width: 800px) {
   .page-content {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
@@ -101,6 +101,9 @@ body {
 }
 .card:nth-child(2):before {
   background-image: url(https://i.ibb.co/Jv2RQ5h/Stealth-Grounds.png);
+}
+.card:nth-child(3):before {
+  background-image: url(https://i.ibb.co/Fst414f/waterfront-restaurants.jpg);
 }
 
 
@@ -317,7 +320,7 @@ a,h1 {
   }
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 800px) {
   a,h1 {
     font-size: 20px;
     letter-spacing:5px;
