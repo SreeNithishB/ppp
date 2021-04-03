@@ -96,13 +96,14 @@ body {
   transform: translateY(-50%);
   transition: transform calc(var(--d) * 2) var(--e);
 }
-.card:nth-child(1):before {
+.card-gamedev:nth-child(1):before {
   background-image: url(https://i.ibb.co/ZJv9cF5/Battle-Tank.png);
 }
-.card:nth-child(2):before {
+.card-gamedev:nth-child(2):before {
   background-image: url(https://i.ibb.co/Jv2RQ5h/Stealth-Grounds.png);
 }
-.card:nth-child(3):before {
+
+.card-ML:nth-child(1):before {
   background-image: url(https://i.ibb.co/Fst414f/waterfront-restaurants.jpg);
 }
 
@@ -320,6 +321,15 @@ a,h1 {
   }
 }
 
+@media only screen and (max-width: 1500px) {
+  a,h1 {
+    font-size: 20px;
+    letter-spacing:5px;
+  }
+  .hr-div {
+    margin-top: 50px !important;
+  }
+}
 @media only screen and (max-width: 800px) {
   a,h1 {
     font-size: 20px;
@@ -328,4 +338,43 @@ a,h1 {
   .hr-div {
     margin-top: 100px !important;
   }
+  .divider {
+    text-align: center;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .divider span {
+    margin-left: 0px;
+    padding: 0px;
+  }
+  .divider-wrapper {
+    margin-top: 25px !important;
+    width: auto;
+  }
+}
+
+
+.divider {
+   width: 100%;
+   text-align: left;
+   border-bottom: 1px solid #fff;
+   line-height: 0.1em;
+   margin: 10px 0 20px;
+   color: white;
+   background-color: #111111;
+   padding-left: 20px;
+   padding-right: 20px;
+}
+
+.divider span {
+    background:#fff;
+    padding:0 10px;
+    margin-left: 100px;
+    background-color: #111111;
+}
+
+.divider-wrapper {
+  margin-top: 100px;
+  margin-bottom: 25px;
+  width: 80vw;
 }
